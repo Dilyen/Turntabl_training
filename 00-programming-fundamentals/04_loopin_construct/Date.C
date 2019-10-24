@@ -34,4 +34,18 @@ int main(){
 	 }
 
 
+	int yr = 0, m, d;
+	//Prining earliest date using year
+	for(int i = 0; i < 3; i++){
+		if(vdate[i].year > yr){
+			yr = vdate[i].year;
+			m = vdate[i].month;
+			d = vdate[i].day;
+		}
+	}
+	cout << "==================================" <<endl;
+	cout <<"Earliest Date: " << d << "-"<< m << "-" << yr << endl;
+
+
+
 }
